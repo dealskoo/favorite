@@ -1,0 +1,57 @@
+{
+    "name": "dealskoo/favorite",
+    "description": "Dealskoo Favorite",
+    "homepage": "https://www.dealskoo.com",
+    "support": {
+        "issues": "https://github.com/dealskoo/favorite/issues",
+        "source": "https://github.com/dealskoo/favorite"
+    },
+    "keywords": [
+        "Laravel",
+        "Dealskoo Favorite",
+        "Dealskoo"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Dealskoo\\Favorite\\": "src/",
+            "Database\\Factories\\Dealskoo\\Favorite\\Models\\": "database/factories/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dealskoo\\Favorite\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "hadi",
+            "email": "hadi@dealskoo.com",
+            "homepage": "https://www.dealskoo.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "laravel/framework": ">=7.20"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.23",
+        "orchestra/canvas": "^6.10",
+        "phpunit/phpunit": "^9.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dealskoo\\Favorite\\Providers\\FavoriteServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

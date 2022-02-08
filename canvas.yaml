@@ -1,0 +1,27 @@
+preset: package
+
+namespace: Dealskoo\Favorite
+user-auth-provider: App\User
+
+paths:
+  src: src
+  resource: resources
+
+factory:
+  path: database/factories
+
+migration:
+  path: database/migrations
+  prefix: ''
+
+console:
+  namespace: Dealskoo\Favorite\Console
+
+model:
+  namespace: Dealskoo\Favorite\Models
+
+provider:
+  namespace: Dealskoo\Favorite\Providers
+
+testing:
+  namespace: Dealskoo\Favorite\Tests
