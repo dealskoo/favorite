@@ -2,13 +2,13 @@
 
 namespace Dealskoo\Favorite\Events;
 
-use Illuminate\Database\Eloquent\Model;
+use Dealskoo\Favorite\Models\Favorite;
 
 class Event
 {
     public $favorite;
 
-    public function __construct(Model $favorite)
+    public function __construct(Favorite $favorite)
     {
         $this->favorite = $favorite;
     }
