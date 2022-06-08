@@ -5,12 +5,10 @@ namespace Dealskoo\Favorite\Models;
 use Dealskoo\Favorite\Events\Favorited;
 use Dealskoo\Favorite\Events\Unfavorited;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Favorite extends Model
 {
-    use HasFactory;
 
     protected $dispatchesEvents = [
         'created' => Favorited::class,
