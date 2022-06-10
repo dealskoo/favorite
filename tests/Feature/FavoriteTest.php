@@ -86,6 +86,7 @@ class FavoriteTest extends TestCase
 
         $user1->favorite($post);
         $user2->favorite($post);
+        $this->assertCount(2, $post->favorites);
         $this->assertCount(2, $post->favoriters);
 
         $this->assertSame($user1->name, $post->favoriters[0]['name']);
